@@ -88,7 +88,7 @@ export const mySocials = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/_kamlesh_2004_?igsh=MWt5cnhydWNhNXNocg==",
     icon: "/assets/socials/instagram.svg",
   },
 ];
