@@ -8,11 +8,11 @@ import { easing } from "maath";
 import { Suspense } from "react";
 import Loader from "../components/Loader";
 
-
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
+    /* Added pt-32 (mobile) and md:pt-36 (desktop) to prevent Navbar overlap */
+    <section className="flex items-start justify-center min-h-screen pt-32 md:pt-36 overflow-hidden md:items-start md:justify-start c-space">
       <HeroText />
       <ParallaxBackground />
       <figure
@@ -26,12 +26,10 @@ const Hero = () => {
                 scale={isMobile && 0.23}
                 position={isMobile && [0, -1.5, 0]}
               />
-            
             </Float>
             <Rig />
           </Suspense>
         </Canvas>
-        
       </figure>
     </section>
   );

@@ -5,7 +5,6 @@ export function Frameworks() {
     "auth0",
     "blazor",
     "cplusplus",
-    "csharp",
     "css3",
     "dotnet",
     "dotnetcore",
@@ -16,7 +15,8 @@ export function Frameworks() {
     "react",
     "sqlite",
     "tailwindcss",
-    "vite.js",
+    "vitejs",
+    "supabase",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">

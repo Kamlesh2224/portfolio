@@ -16,18 +16,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "Supabase",
+        path: "/assets/logos/supabase.svg",
       },
       {
         id: 4,
@@ -52,18 +52,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 2,
+        name: "Supabase",
+        path: "/assets/logos/supabase.svg",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
       },
       {
         id: 4,

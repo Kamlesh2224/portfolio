@@ -79,7 +79,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex justify-center p-6 transition-all duration-500">
+    /* Changed: Added pointer-events-none to let 3D canvas events pass through where empty */
+    <header className="fixed inset-x-0 top-0 z-50 flex justify-center p-6 pointer-events-none">
       <motion.div
         layout
         initial={false}
@@ -87,13 +88,14 @@ const Navbar = () => {
           width: scrolled ? "fit-content" : "100%",
           maxWidth: scrolled ? "600px" : "1200px",
           backgroundColor: scrolled
-            ? "rgba(10, 10, 12, 0.9)"
+            ? "rgba(10, 10, 12, 0.95)"
             : "rgba(10, 10, 12, 0.85)",
           borderRadius: scrolled ? "100px" : "20px",
           border: "1px solid rgba(255, 255, 255, 0.1)",
         }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="flex items-center justify-between px-8 py-4 backdrop-blur-xl shadow-2xl overflow-hidden"
+        /* Changed: Switched to spring to stop the fluctuation/flicker during fast scroll */
+        transition={{ type: "spring", stiffness: 260, damping: 20, mass: 0.5 }}
+        className="flex items-center justify-between px-8 py-4 backdrop-blur-xl shadow-2xl overflow-hidden pointer-events-auto"
       >
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -128,7 +130,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-24 left-6 right-6 bg-[#0a0a0c] border border-white/10 rounded-[2rem] p-8 sm:hidden shadow-2xl backdrop-blur-3xl"
+            className="absolute top-24 left-6 right-6 bg-[#0a0a0c] border border-white/10 rounded-[2rem] p-8 sm:hidden shadow-2xl backdrop-blur-3xl pointer-events-auto"
           >
             <Navigation closeMenu={() => setIsOpen(false)} />
           </motion.div>

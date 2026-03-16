@@ -43,8 +43,7 @@ const About = () => {
           <div className="relative z-10 pointer-events-none">
             <h3 className="text-white text-4xl font-bold">Kamlesh Behera</h3>
             <p className="text-gray-400 mt-6 max-w-xl text-lg leading-relaxed">
-              Over the last 4 years, I've developed my full-stack skills to
-              deliver dynamic and responsive software and web applications.
+              Full-Stack Developer & AI Enthusiast.I build modern web applications with a focus on scalability, AI integration, and clean architecture. From database management to high-performance frontend layouts, I am dedicated to continuous learning and technical excellence.
             </p>
           </div>
         </motion.div>
@@ -77,7 +76,7 @@ const About = () => {
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="AI"
               containerRef={grid2Container}
             />
             <Card
@@ -97,22 +96,22 @@ const About = () => {
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              text="Authentication"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/javascript.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/tailwindcss.svg"
               containerRef={grid2Container}
             />
           </div>
