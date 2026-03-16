@@ -116,7 +116,7 @@ const Navbar = () => {
         >
           <img
             src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-            className="w-6 h-6 invert"
+            className="w-6 h-6"
             alt="toggle"
           />
         </button>
